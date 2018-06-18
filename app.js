@@ -1,8 +1,8 @@
 var n = document.getElementById('Uname')
-document.getElementById('mainform').addEventListener('submit',function(e){
+document.getElementById('mainform').addEventListener('submit', function (e) {
   fetchGithubRepos()
   e.preventDefault()
-  })
+})
 
 function fetchGithubRepos () {
   fetch('https://api.github.com/users/' + n.value + '/repos')
